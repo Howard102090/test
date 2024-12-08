@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人帳號</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="#">討論區</a>
+        <div class="ms-auto">
+            <a href="login.html" class="btn btn-primary me-2">登入</a>
+            <a href="register.html" class="btn btn-secondary">註冊</a>
+        </div>
+    </nav>
+
+    <!-- 用戶資訊區 -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- 用戶頭像 -->
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="用戶頭像">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">用戶名稱</h5>
+                        <p class="text-white">Email: user@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <!-- 用戶統計區 -->
+                <h3 class="text-white mb-4">用戶設定</h3>
+
+                <!-- 表單區 -->
+                <form>
+                    <!-- 性別 -->
+                    <div class="mb-3">
+                        <label for="gender" class="form-label text-white">性別</label>
+                        <select id="gender" class="form-select">
+                            <option value="male">男</option>
+                            <option value="female">女</option>
+                        </select>
+                    </div>
+
+                    <!-- 年齡 -->
+                    <div class="mb-3">
+                        <label for="age" class="form-label text-white">年齡</label>
+                        <input type="number" id="age" class="form-control" min="1" max="100" placeholder="請輸入年齡" required>
+                    </div>
+
+                    <!-- 用戶統計區 -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="card text-white bg-dark">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">追蹤創作者</h5>
+                                    <p class="card-text">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-white bg-dark">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">粉絲數</h5>
+                                    <p class="card-text">200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 用戶文章區 -->
+                    <h3 class="text-white mb-4">我的文章</h3>
+                    <div id="user-posts">
+                        <div class="card mb-4">
+                            <div class="card-header bg-secondary text-white">文章標題 A</div>
+                            <div class="card-body text-white">
+                                <p class="card-text">這是文章 A 的摘要。這是摘要的內容...</p>
+                                <a href="post_details.html" class="btn btn-info">查看文章</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="new_post.html" class="btn btn-success mb-4">新增文章</a>
+
+                    <!-- 用戶收藏文章區 -->
+                    <h3 class="text-white mb-4">收藏文章</h3>
+                    <div id="user-favorites">
+                        <div class="card mb-4">
+                            <div class="card-header bg-secondary text-white">收藏文章標題 A</div>
+                            <div class="card-body text-white">
+                                <p class="card-text">這是收藏文章 A 的摘要。</p>
+                                <a href="post_details.html" class="btn btn-info">查看文章</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 提交按鈕 -->
+                    <button type="submit" class="btn btn-warning mt-4">更新資料</button>
+                </form>
+
+                <!-- 登出 -->
+                <a href="login.html" class="btn btn-danger mt-4">登出</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
