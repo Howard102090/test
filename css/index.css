@@ -1,0 +1,63 @@
+/* 全局背景與文字設定 */
+body {
+    background-color: #121212; /* 深色背景 */
+    color: #ffffff;           /* 文字白色 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 搜尋欄美化 */
+.search-bar {
+    border: 1px solid #535050;
+    background-color: #fffdfd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.search-bar:focus {
+    background-color: #444;
+    border-color: #555;
+    box-shadow: none;
+}
+
+/* 卡片樣式 */
+.card {
+    background-color: #1f1f1f; /* 卡片深灰色背景 */
+    border: none;             /* 移除邊框 */
+    border-radius: 10px;
+}
+
+.card-header {
+    border-bottom: 1px solid #444;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #cccccc;
+}
+
+/* 按鈕美化 */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* 新增的陰影效果 */
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}

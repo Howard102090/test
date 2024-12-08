@@ -1,0 +1,48 @@
+/* 全局背景與文字設定 */
+body {
+    background-color: #121212; /* 深色背景 */
+    color: #ffffff;           /* 文字白色 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 表單美化 */
+.form-control {
+    background-color: #fffbfb;
+    color: #fff;
+    border: 1px solid #323131;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: #f0f0f0;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+/* 按鈕樣式 */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #0a0909;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* 設定區域間距 */
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+/* 頁面標題 */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
